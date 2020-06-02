@@ -30,9 +30,10 @@ ARTICLES = [
 def calculate_recipients
   # Using the SUBSCRIBERS and UNSUBSCRIBED arrays,
   # write a method that will return an array of only the subscribers who haven't unsubscribed
+  
 end
 
-def first_n_articles(number_of_articles
+def first_n_articles(number_of_articles)
   ARTICLES.first(number_of_articles)
 end
 
@@ -54,7 +55,7 @@ def print_many_articles(articles)
 end
 
 def format_campus_location(campus)
-  "Flatiron #{campus["name"]}"
+  test = "Flatiron #{campus[:name]}"
 end
 
 def format_subject
@@ -80,7 +81,7 @@ def print_newsletter(number)
   print_many_articles(articles)
   puts format_footer(CAMPUS)
 
-  end
+
 end
 
 def run
